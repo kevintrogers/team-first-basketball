@@ -1,0 +1,331 @@
+/*
+ * Media Queries Template Author: http://stuffandnonsense.co.uk/blog/about/hardboiled_css3_media_queries/
+ */
+
+/* Smartphones (portrait and landscape) ----------- */
+@media only screen 
+and (min-device-width : 320px) 
+ {
+ body {
+  margin: 0  ;
+  padding: 0;
+}
+
+header nav {
+  background: transparent  ;
+  border: none  ;
+  font-family: 'Oswald', sans-serif;
+  width: 100%;
+  margin-top: 0;
+  
+}
+    header nav li{
+      margin-left: 25%;
+text-align: center;
+width: 100%;
+margin-right: 25%;
+    }
+  header nav li a{
+    color:#fff  ;
+    text-shadow:none  ;
+    letter-spacing: .02em;
+    text-align:center;
+  }
+  header nav li a:hover{
+    background:#303030  ;
+    color: #26A7D9  ;
+  }
+  nav .active a{
+    background: #808080  ;
+
+  }
+
+.navbar-brand {
+  
+}
+
+.brand_name a{
+  margin-top:.3em;
+  display: inline-block;
+  font-family: 'Schoolbell', cursive   ;
+  color: #fff;
+  font-size: 1.7em;
+  text-shadow: 0px 0px 6px #000;
+}
+
+.navbar-right {
+  padding-right: 10em;
+}
+
+.navbar-nav li a {
+  margin: 0 22.5%;
+  font-family: 'Oswald', sans-serif;
+  font-size: 1.6em;
+  color: #fff;
+}
+
+.navbar-nav li a:hover {
+  background: #c9ad47;
+}
+
+h1 {
+  padding-top: 5em;
+  text-align: center;
+  font-family: 'Oswald', sans-serif;
+}
+
+h3 {
+  text-align: center;
+  font-family: 'Enriqueta', serif  ;
+  font-weight: 700  ;
+}
+
+.navbar-brand img {
+  display: inline-block  ;
+  border-radius: 50%;
+  height: 5em;
+  width: 5em;
+  padding: .5em;
+  
+}
+
+#home {
+  height: 40em;
+  width: 100%;
+  background: url("http://u83341670@s605611687.onlinehome.us/images/night_sky_3.jpg");
+  background-position: center;
+  background-repeat: none;
+  background-size:100% 100%;
+}
+
+#center_buttons {
+  position: relative;
+  top: 0;
+  display: inline;
+}
+
+.inline_button {
+  display: inline-block;
+  margin:3em 22.5%;
+  font-size:.5em;
+  height:1.5em;
+  background: 2px solid #fff  ;
+ 
+}
+
+.soc_med_button {
+  display: inline-block;  
+  border: 2px solid #fff  ;
+  background: transparent  ;
+  color: #fff  ;
+  font-family: 'Oswald', sans-serif;
+  font-size: 3em;
+  margin-top:10px;
+  width:100%;
+  
+  
+}
+
+.soc_med_button:hover {
+  color:#26a7d9;
+}
+.about_text {
+  font-family: "Enriqueta", serif;
+  font-weight: 700;
+  margin: 0 10%;
+}
+
+.separator_row {
+  margin: 0 20%;
+}
+
+.separator {
+  text-align: center;
+  border-bottom: 2px solid #2C6A79;
+  margin-bottom: 4.5rem;
+}
+
+.separator h1 {
+  background: #FFF none repeat scroll 0% 0%;
+  color: #000;
+  display: inline-block;
+  font-family: "Oswald", sans-serif;
+  margin-bottom: 1.5rem;
+  font-weight: 500;
+  padding: 0px 10px;
+  position: relative;
+  text-transform: uppercase;
+  top: 34px;
+}
+
+#portfolio {
+
+}
+
+.portfolio_grid {
+  display: inline;
+  margin-left:12.5%;
+  margin-right:12.5%;
+
+}
+
+.portfolio_grid li {
+ display: inline-block;
+    font-weight: 700;
+    width: 100%;
+    text-align: center;
+    margin: 1em auto;
+}
+
+.portfolio_grid a img {
+  border-radius: 50%;
+  height: 15em;
+  width: 15em
+}
+
+figcaption {
+  text-align: center;
+  font-size: 1.2em;
+  font-family:'Oswald';
+letter-spacing: 0.03em;
+font-weight: 400;
+}
+
+.inline_element {
+  display: inline-block;
+}
+
+.contact_image img {
+  border-radius: 50%;
+  size: 20erm 20erm;
+}
+
+.email {
+  color: #000;
+  text-decoration: none;
+  font-family: 'Enriqueta', serif;
+  font-weight: 700;
+}
+
+.li_left {
+  list-style: none;
+}
+
+.li_left div {
+  margin-bottom: 1em;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+}
+
+.li_left button {
+  background: none;
+  color: #000;
+  border: 2px solid #2C6A79;
+  font-size: 1em;
+  box-shadow: 0 0 5px #26a7d9;
+  width:10em;
+}
+
+.li_left button:hover {
+  background: #2C6A79;
+  color: #fff;
+}
+
+footer {
+  background: #303030;
+  color: #fff;
+  font-family: 'Oswald', sans-serif;
+}
+
+.footer_menu {
+  position: relative;
+  margin-top: 2rem;
+  list-style: none;
+  margin-left: 2em;
+}
+
+.footer_item {
+  text-align: left;
+}
+
+.footer_menu li {
+  padding: .5rem;
+}
+
+.footer_menu li a {
+  font-size: 1.5rem;
+  color: #fff;
+  text-decoration: none;
+ 
+}
+
+.footer_menu li a:hover {
+  color: dodgerblue;
+}
+
+.copyright {
+  color: #337AB7;
+  margin: 0 30%;
+}
+
+.copyright a:hover {
+  color: #fff;
+  text-decoration: none;
+}
+}
+
+
+/* Smartphones (landscape) ----------- */
+@media only screen 
+and (min-width : 321px) {
+/* Styles */
+}
+
+/* Smartphones (portrait) ----------- */
+@media only screen 
+and (max-width : 320px) {
+/* Styles */
+}
+
+/* iPads (portrait and landscape) ----------- */
+@media only screen 
+and (min-device-width : 768px) 
+and (max-device-width : 1024px) {
+/* Styles */
+}
+
+/* iPads (landscape) ----------- */
+@media only screen 
+and (min-device-width : 768px) 
+and (max-device-width : 1024px) 
+and (orientation : landscape) {
+/* Styles */
+}
+
+/* iPads (portrait) ----------- */
+@media only screen 
+and (min-device-width : 768px) 
+and (max-device-width : 1024px) 
+and (orientation : portrait) {
+/* Styles */
+}
+
+/* Desktops and laptops ----------- */
+@media only screen 
+and (min-width : 1224px) {
+/* Styles */
+}
+
+/* Large screens ----------- */
+@media only screen 
+and (min-width : 1824px) {
+/* Styles */
+}
+
+/* iPhone 4 ----------- */
+@media
+only screen and (-webkit-min-device-pixel-ratio : 1.5),
+only screen and (min-device-pixel-ratio : 1.5) {
+/* Styles */
+}

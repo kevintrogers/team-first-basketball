@@ -1,0 +1,26 @@
+{
+  "name": "spicymonkey_portfolio",
+  "version": "1.0.0",
+  "description": "Spicy Monkey Media's website.",
+  "main": "index.html",
+  "scripts": {
+    "test": "test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/kevintrogers/portfolio.git"
+  },
+  "author": "Kevin Rogers",
+  "license": "UNLICENSED",
+  "bugs": {
+    "url": "https://github.com/kevintrogers/portfolio/issues"
+  },
+  "homepage": "https://github.com/kevintrogers/portfolio#readme",
+  "devDependencies": {
+    "browser-sync": "^2.11.1",
+    "gulp": "^3.9.1",
+    "gulp-sass": "^2.2.0",
+    "gulp-watch": "^4.3.5",
+    "jshint-stylish": "^2.1.0"
+  }
+}

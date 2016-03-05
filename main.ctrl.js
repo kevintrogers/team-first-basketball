@@ -1,0 +1,89 @@
+angular.module('app').controller("MainController", function(){
+    var vm = this;
+    vm.title = 'Spicy Monkey Media';
+    vm.pages = [
+        {
+            title:'Home',
+            link:'#home'
+        },
+        {
+            title:'About',
+            link:'#about'
+        },
+        {
+            title:'Portfolio',
+            link:'#portfolio'
+        },
+        {
+            title:'Contact',
+            link:'#contact'
+        }
+        ];
+vm.social_media = [
+        {
+            title:'Twitter',
+            link:'https://twitter.com/kevin_t_rogers'
+        },
+        {
+            title:'Linkedin',
+            link:'"https://www.linkedin.com/profile/view?id=AAIAAAmBUKoBdbOrqAwzQRxcyyy6wp_9xl90TVk&trk=nav_responsive_tab_profile'
+        },
+        {
+            title:'Github',
+            link:'https://github.com/kevintrogers'
+        },
+        {
+            title:'FreeCodeCamp',
+            link:'http://freecodecamp.com/kevintrogers'
+        }
+        ];
+vm.projects = [
+        {
+            title:'Twitter',
+            link:'https://twitter.com/kevin_t_rogers',
+            description:''
+        },
+        {
+            title:'Twitter',
+            link:'https://twitter.com/kevin_t_rogers',
+            description:''
+            
+        },
+        {
+            title:'Twitter',
+            link:'https://twitter.com/kevin_t_rogers',
+            description:''
+        },
+        {
+            title:'Twitter',
+            link:'https://twitter.com/kevin_t_rogers',
+            description:''
+        },
+                {
+            title:'Twitter',
+            link:'https://twitter.com/kevin_t_rogers',
+            description:''
+        },
+                {
+            title:'Twitter',
+            link:'https://twitter.com/kevin_t_rogers',
+            description:''
+        },
+                {
+            title:'Twitter',
+            link:'https://twitter.com/kevin_t_rogers',
+            description:''
+        },
+                {
+            title:'Twitter',
+            link:'https://twitter.com/kevin_t_rogers',
+            description:''
+        },
+                {
+            title:'Twitter',
+            link:'https://twitter.com/kevin_t_rogers',
+            description:''
+        },
+        ];
+
+});
