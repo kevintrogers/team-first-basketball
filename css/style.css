@@ -1,0 +1,78 @@
+@import url(https://fonts.googleapis.com/css?family=Yellowtail|Montserrat|Roboto+Slab:400,700);
+nav {
+  color: #fff;
+  font-family: "Montserrat", sans-serif; }
+
+.social-media-links {
+  font-family: "Montserrat", sans-serif; }
+
+/*
+ * Author: http://stuffandnonsense.co.uk/blog/about/hardboiled_css3_media_queries/
+ */
+/* Smartphones (portrait and landscape) ----------- */
+@media only screen and (min-device-width: 320px) {
+  #home {
+    height: 35em;
+    background: url("http://u83341670@s605611687.onlinehome.us/images/night_sky_3.jpg") no-repeat center;
+    background-size: 100% 100%; }
+  .brand-logo {
+    font-family: "Yellowtail", cursive;
+    color: #fff;
+    top: 2.2em;
+    position: relative;
+    left: 33.3333333%; }
+  .brand-logo img {
+    height: 4em;
+    width: 4em;
+    border-radius: 50%; }
+  .brand-logo span {
+    position: relative;
+    font-size: 1.8em;
+    padding: 0 .4em;
+    bottom: .8em; }
+  .social-media-links {
+    position: absolute;
+    bottom: 3em;
+    display: block; }
+  #nav-mobile {
+    display: inline; }
+  #nav-mobile li {
+    display: inline-block;
+    float: none !important; }
+  .social-media-links li a {
+    color: #fff;
+    background: doddgerblue;
+    border: 2px solid #fff;
+    width: 100%;
+    padding: .2em; }
+  #portfolio-list {
+    display: inline;
+    list-style: none; }
+  #portfolio-list li {
+    display: inline-block;
+    margin: .1em .7em; }
+  li .card {
+    width: 85%; } }
+
+/* Smartphones (landscape) ----------- */
+/* Smartphones (portrait) ----------- */
+/* iPads (portrait and landscape) ----------- */
+@media only screen and (min-device-width: 768px) {
+  /* Styles */
+  #nav-mobile {
+    display: inline;
+    text-align: center; } }
+
+/* iPads (landscape) ----------- */
+/* iPads (portrait) ----------- */
+/* Desktops and laptops ----------- */
+@media only screen and (min-width: 1224px) {
+  /* Styles */
+  .social-media-links li {
+    display: inline-block;
+    margin: 0 1em 2em;
+    width: 13em;
+    text-align: center; } }
+
+/* Large screens ----------- */
+/* iPhone 4 ----------- */

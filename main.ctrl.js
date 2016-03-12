@@ -4,18 +4,22 @@ angular.module('app').controller("MainController", function(){
     vm.pages = [
         {
             title:'Home',
+            abbr:'H',
             link:'#home'
         },
         {
             title:'About',
-            link:'#about'
+            abbr:'A',
+            link:'#about',
         },
         {
             title:'Portfolio',
+            abbr:'P',
             link:'#portfolio'
         },
         {
             title:'Contact',
+            abbr:'C',
             link:'#contact'
         }
         ];
@@ -41,47 +45,56 @@ vm.projects = [
         {
             title:'Twitter',
             link:'https://twitter.com/kevin_t_rogers',
-            description:''
+            screenshot:'http://spicymonkeymedia.com/images/spicymonkey_logo.png',
+            description:'This that teh other thing'
         },
         {
             title:'Twitter',
             link:'https://twitter.com/kevin_t_rogers',
-            description:''
+            screenshot:'http://spicymonkeymedia.com/images/spicymonkey_logo.png',
+            description:'Blah Blah Blah'
             
         },
         {
             title:'Twitter',
             link:'https://twitter.com/kevin_t_rogers',
-            description:''
+            screenshot:'http://spicymonkeymedia.com/images/spicymonkey_logo.png',
+            description:'Yada Yada Yada'
         },
         {
             title:'Twitter',
             link:'https://twitter.com/kevin_t_rogers',
+            screenshot:'',
             description:''
         },
                 {
             title:'Twitter',
             link:'https://twitter.com/kevin_t_rogers',
+            screenshot:'',
             description:''
         },
                 {
             title:'Twitter',
             link:'https://twitter.com/kevin_t_rogers',
+            screenshot:'',
             description:''
         },
                 {
             title:'Twitter',
             link:'https://twitter.com/kevin_t_rogers',
+            screenshot:'',
             description:''
         },
                 {
             title:'Twitter',
             link:'https://twitter.com/kevin_t_rogers',
+            screenshot:'',
             description:''
         },
                 {
             title:'Twitter',
             link:'https://twitter.com/kevin_t_rogers',
+            screenshot:'',
             description:''
         },
         ];

@@ -1,38 +1,53 @@
   <!DOCTYPE html>
   <html>
     <head>
-      <!--Import Google Icon Font-->
-      <link href="http://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-      <!--Import materialize.css-->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.5/css/materialize.min.css">
+      <meta content="width=device-width, initial-scale=1, maximum-scale=1.0, user-scalable=no" name="viewport">
+                          <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet"> 
+ <!-- Compiled and minified CSS -->
+
 
 <link rel="icon" type="image/ico" href="images/favicon.ico">
-<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-  <link rel="styleSheet" href="style.css" type="text/css" media="screen">
+
+  <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.5/css/materialize.min.css">
+
+
+  <link rel="styleSheet" href="css/style.css" type="text/css" media="screen">
     <!--[if lt IE 9]>
   <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
   <![endif]-->
-      <!--Let browser know website is optimized for mobile-->
-      <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+
+
     </head>
 
-    <body>
+    <body ng-app="app" ng-controller="MainController as main">
         <nav class="grey darken-4">
-    <div class="nav-wrapper">
-      <a href="#" class="nav_logo brand-logo center">Spicy<img alt="Spicy Monkey Media" src="http://spicymonkeymedia.com/images/spicymonkey_logo.png" 
-      style="height:3em; width:3em; border-radius:50%;">Monkey</a>
-      <ul id="nav-mobile" class="left hide-on-med-and-down">
-        <li><a href="#home">Home</a></li>
-        <li><a href="#about">About</a></li>
-        <li><a href="#portfolio">Portfolio</a></li>
-        <li><a href="#contact">Contact</a></li>
-        <li><a href="#">Blog</a></li>
+    <div class="nav-wrapper center">
+      
+        <ul id="nav-mobile">
+          
+        <li ng-repeat="page in main.pages"><a href='{{page.link}}'><span class='hide-on-small-only'>{{page.title}}</span><span class='btn-floating hide-on-med-and-up btn tooltipped' data-position="bottom" data-delay="50" data-tooltip="{{page.title}}">{{page.abbr}}</span></a></li>
+        
       </ul>
     </div>
   </nav>
-      <section id='home'></section>
+      <section id='home'>
+         <a href="#" class="nav_logo brand-logo center "><span>Spicy</span><img   alt="Spicy Monkey Media" src="http://spicymonkeymedia.com/images/spicymonkey_logo.png"><span>Monkey</span></a>
+   
+      <ul class="social-media-links">
+
+        <li ng-repeat="media in main.social_media" >
+                  <div class="row">
+        <div class="col s10 offset-s1 m2 offset-m1">
+            <a href="{{media.link}}"><span class="flow-text">{{media.title}}</span></a>
+            </div>
+    </div>
+          </li>
+        </ul>
+
+      </section>
       <section id='about'></section>
-      <article class='about_text flow-text'>
+<div class="container">
+      <article class=' about_text flow-text'>
         <p>As a boy, I loved board games. Whenever someone in my family brought a new game home, 
         I always wanted to be the first one to read the rules. I knew that the better I understood the rules, 
         The better prepared I would be to develop an effective strategy. It also gave me the opportunity to explain
@@ -60,25 +75,29 @@
         They looked bad. I started to learn about design, typography, Responsive Design. I really wanted to understand why some sites looked really slick wile others looked 
         cluttered.
         </p>
+
       </article>
       <section id='portfolio'></section>
-      <ul class='col s8 offset-s2'>
-        <li class= 'col s2 '>  <div class="card">
-    <div class="col s2 card-image waves-effect waves-block waves-light">
-      <img class="activator" src="http://spicymonkeymedia.com/images/spicymonkey_logo.png" style="height:5em; width:5em;">
+      <div class='row'>
+      <ul id="portfolio-list">
+        <li ng-repeat="project in main.projects" class= ' '>  <div class="card hoverable">
+    <div class="card-image waves-effect waves-block waves-light">
+      <img class="activator" src='{{ project.screenshot }}' >
     </div>
     <div class="card-content">
-      <span class="card-title activator grey-text text-darken-4">Project<i class="material-icons right">more_vert</i></span>
-      <p><a href="#">See The Project</a></p>
+      <span class="card-title activator grey-text text-darken-4">{{project.title}}<i class="material-icons right">more_vert</i></span>
+      <p><a href="{{ project.link }}">See Project</a></p>
     </div>
     <div class="card-reveal">
-      <span class="card-title black-text ">Card Title<i class="material-icons right">close</i></span>
-      <p>Technologies used:HTML, CSS, SCSS, JavaScript, Materialize, Gulp, AngularJS</p>
+      <span class="card-title black-text ">{{ projects.title }}<i class="material-icons right">close</i></span>
+      <p class="technology">Technologies used:<br><span>{{ project.description }}</span></p>
     </div>
   </div>
   </li>
       </ul>
-      
+      </div>
+      </section>
+                </div>
       <section id='contact'>
         <h2 class="center">Contact</h2>
           <div class="row">
@@ -116,12 +135,27 @@
       <button class="col offset-s5 offset-l4 btn blue accent-1" type="submit" name="action">Send</button>
     </form>
   </div>
+
       </section>
       
-  <footer>
-      <footer>
+      <!--Import jQuery before materialize.js-->
+ <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
+  <!-- Compiled and minified JavaScript -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.5/js/materialize.min.js"></script>
+          <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.3.4/angular.min.js"></script>
+    <script src="app.js"></script>
+    <script src="main.ctrl.js"></script>
+ 
+<script> $(document).ready(function(){
+    $('.tooltipped').tooltip({delay: 50});
+  });
+  </script>
+
+  
+    </body>
+      <footer class="page-footer grey darken-1">
     <div class="footer_row row center">
-      <ul class="footer_menu col-xs-5 col-xs-offset-1 col-sm-4 col-sm-offset-2">
+      <ul class="footer_menu col offset-s1 l4 offset-l2">
         <li class="footer_item"><a href="#home">
           Home
         </a></li>
@@ -157,18 +191,10 @@
                   FreeCodeCamp</a>
         </li>
       </ul>
-
-      <div class="copyright col s5 offset-s1 m4 offset-m2">&copy; 2016 <a href="http://spicymonkeymedia.com/#home"> Spicy Monkey Media.</a>
+<div class="footer-copyright col s12 grey darken-4"> 
+      <div class="col s5 offset-s1 m4 offset-m2">&copy; 2016 <a href="http://spicymonkeymedia.com/#home"> Spicy Monkey Media.</a>
+      </div>
       </div>
     </div>
   </footer>
-  </footer>
-      <!--Import jQuery before materialize.js-->
-          <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.3.4/angular.min.js"></script>
-    <script src="app.js"></script>
-    <script src="main.ctrl.js"></script>
-      <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
-      <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.5/js/materialize.min.js"></script>
-   
-    </body>
   </html>
