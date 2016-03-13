@@ -21,33 +21,40 @@
 
     <body ng-app="app" ng-controller="MainController as main">
         <nav class="grey darken-4">
+          
     <div class="nav-wrapper center">
       
         <ul id="nav-mobile">
           
-        <li ng-repeat="page in main.pages"><a href='{{page.link}}'><span class='hide-on-small-only'>{{page.title}}</span><span class='btn-floating hide-on-med-and-up btn tooltipped' data-position="bottom" data-delay="50" data-tooltip="{{page.title}}">{{page.abbr}}</span></a></li>
+        <li ng-repeat="page in main.pages">
+          <a href='{{page.link}}'>
+            <span class='hide-on-small-only'>{{page.title}}</span>
+            <span class='btn-floating hide-on-med-and-up btn tooltipped' data-position="bottom" data-delay="50" data-tooltip="{{page.title}}">{{page.abbr}}</span>
+            </a>
+            </li>
         
       </ul>
     </div>
+
   </nav>
       <section id='home'>
-         <a href="#" class="nav_logo brand-logo center "><span>Spicy</span><img   alt="Spicy Monkey Media" src="http://spicymonkeymedia.com/images/spicymonkey_logo.png"><span>Monkey</span></a>
-   
+        <div class='row center'>
+         <a href="#" class="nav_logo brand-logo center "><span>Spicy</span><img alt="Spicy Monkey Media" src="http://spicymonkeymedia.com/images/spicymonkey_logo.png"><span>Monkey</span></a>
+       </div>
+       <div class='row center'>
       <ul class="social-media-links">
 
-        <li ng-repeat="media in main.social_media" >
-                  <div class="row">
-        <div class="col s10 offset-s1 m2 offset-m1">
-            <a href="{{media.link}}"><span class="flow-text">{{media.title}}</span></a>
-            </div>
-    </div>
+        <li ng-repeat="media in main.social_media" class="col s10 offset-s1 m2 offset-m1" >
+
+            <a class="col s10 offset-s1 m2 offset-m1" href="{{media.link}}"><span class="flow-text">{{media.title}}</span></a>
+
           </li>
         </ul>
 
       </section>
       <section id='about'></section>
 <div class="container">
-      <article class=' about_text flow-text'>
+      <article class='about_text flow-text'>
         <p>As a boy, I loved board games. Whenever someone in my family brought a new game home, 
         I always wanted to be the first one to read the rules. I knew that the better I understood the rules, 
         The better prepared I would be to develop an effective strategy. It also gave me the opportunity to explain
@@ -77,10 +84,11 @@
         </p>
 
       </article>
-      <section id='portfolio'></section>
-      <div class='row'>
+      <section id='portfolio'>
+      <div class='row col s10 m10 offset-m1 center'>
       <ul id="portfolio-list">
-        <li ng-repeat="project in main.projects" class= ' '>  <div class="card hoverable">
+        <li ng-repeat="project in main.projects" class= 'col s10  m2 '>  
+        <div class="card hoverable">
     <div class="card-image waves-effect waves-block waves-light">
       <img class="activator" src='{{ project.screenshot }}' >
     </div>
@@ -93,6 +101,7 @@
       <p class="technology">Technologies used:<br><span>{{ project.description }}</span></p>
     </div>
   </div>
+  <div class='col s1 m0'></div>
   </li>
       </ul>
       </div>
@@ -155,7 +164,7 @@
     </body>
       <footer class="page-footer grey darken-1">
     <div class="footer_row row center">
-      <ul class="footer_menu col offset-s1 l4 offset-l2">
+      <ul class="footer_menu col offset-s2 s4">
         <li class="footer_item"><a href="#home">
           Home
         </a></li>
@@ -171,7 +180,7 @@
 
 
       </ul>
-      <ul class="footer_menu col s5 offset-s1 m4 offset-m2">
+      <ul class="footer_menu col offset-s2 s4">
         <li class="footer_item">
 
           <a href="https://twitter.com/kevin_t_rogers">

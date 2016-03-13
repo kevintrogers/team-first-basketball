@@ -42,8 +42,7 @@ and (min-device-width : 320px) {
         font-family: $title-font;
     color: $primary-color;
     top: 2.2em;
-    position:relative;
-  left: 33.3333333%;  
+    position:relative; 
 }
 .brand-logo img{
     height:4em; 
@@ -56,13 +55,9 @@ and (min-device-width : 320px) {
     padding: 0 .4em;
     bottom: .8em;
 }
-.social-media-links{
-    position: absolute;
-    bottom:3em;
-    display:block;
-    
-}
+
 #nav-mobile {
+    margin-top:8em;
 
     display: inline;
 }
@@ -71,20 +66,31 @@ and (min-device-width : 320px) {
     float:none !important;
     
 }
+.social-media-links{
+
+    display:block;
+    
+}
+.social-media-links li{
+height: 3em;
+padding-top: .35em;
+margin: 1em 0;
+}
 .social-media-links li a{
     color: $primary-color;
-    background:doddgerblue;
     border: 2px solid $primary-color;
-    width: 100%;
-    padding: .2em;
+}
+.center {
+    float:none !important;
 }
 #portfolio-list{
     display:inline;
     list-style: none;
+    float:none !important;
 }
 #portfolio-list li { 
     display: inline-block; 
-    margin: .1em .7em;
+    margin: .1em 16.66666%;
 }
 
 li .card {

@@ -2,7 +2,8 @@ var gulp = require('gulp'),
  sass = require('gulp-sass'),
  watch = require('gulp-watch'),
  jshint= require('jshint-stylish'),
-  browserSync = require('browser-sync').create();
+browserSync = require('browser-sync').create(),
+ htmlbeautify = require('gulp-html-beautify');
 
 // create a default task and just log a message
 gulp.task('default', ['watch']);
@@ -32,9 +33,18 @@ gulp.task('browserSync', function() {
     },
   })
 })
-/* updated watch task to include sass */
+
 
 gulp.task('watch', function() {
   gulp.watch('js/javascript/**/*.js', ['jshint']);
   gulp.watch('scss/**/*.scss', ['build-css']);
+});
+
+gulp.task('htmlbeautify', function() {
+  var options = {
+    indentSize: 2
+  };
+  gulp.src('*.html')
+    .pipe(htmlbeautify(options))
+    .pipe(gulp.dest('./public/'))
 });

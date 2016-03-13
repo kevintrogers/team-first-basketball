@@ -19,8 +19,7 @@ nav {
     font-family: "Yellowtail", cursive;
     color: #fff;
     top: 2.2em;
-    position: relative;
-    left: 33.3333333%; }
+    position: relative; }
   .brand-logo img {
     height: 4em;
     width: 4em;
@@ -30,27 +29,30 @@ nav {
     font-size: 1.8em;
     padding: 0 .4em;
     bottom: .8em; }
-  .social-media-links {
-    position: absolute;
-    bottom: 3em;
-    display: block; }
   #nav-mobile {
+    margin-top: 8em;
     display: inline; }
   #nav-mobile li {
     display: inline-block;
     float: none !important; }
+  .social-media-links {
+    display: block; }
+  .social-media-links li {
+    height: 3em;
+    padding-top: .35em;
+    margin: 1em 0; }
   .social-media-links li a {
     color: #fff;
-    background: doddgerblue;
-    border: 2px solid #fff;
-    width: 100%;
-    padding: .2em; }
+    border: 2px solid #fff; }
+  .center {
+    float: none !important; }
   #portfolio-list {
     display: inline;
-    list-style: none; }
+    list-style: none;
+    float: none !important; }
   #portfolio-list li {
     display: inline-block;
-    margin: .1em .7em; }
+    margin: .1em 16.66666%; }
   li .card {
     width: 85%; } }
 
