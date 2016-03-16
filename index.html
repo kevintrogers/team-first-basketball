@@ -20,7 +20,7 @@
     </head>
 
     <body ng-app="app" ng-controller="MainController as main">
-        <nav class="grey darken-4">
+        <nav class="grey darken-4 flow-text">
           
     <div class="nav-wrapper center">
       
@@ -44,16 +44,18 @@
        <div class='row center'>
       <ul class="social-media-links">
 
-        <li ng-repeat="media in main.social_media" class="col s10 offset-s1 m2 offset-m1" >
+        <li ng-repeat="media in main.social_media" class="col s12 m1 offset-m1" >
 
-            <a class="col s10 offset-s1 m2 offset-m1" href="{{media.link}}"><span class="flow-text">{{media.title}}</span></a>
+            <a class="col s8 offset-s2 m0 offset-m0" href="{{media.link}}"><span class="flow-text">{{media.title}}</span></a>
 
           </li>
         </ul>
 
       </section>
+      <div class="container">
+       <div class="seperator"><h2>About</h2></div>
       <section id='about'></section>
-<div class="container">
+
       <article class='about_text flow-text'>
         <p>As a boy, I loved board games. Whenever someone in my family brought a new game home, 
         I always wanted to be the first one to read the rules. I knew that the better I understood the rules, 
@@ -84,10 +86,11 @@
         </p>
 
       </article>
+      <div class="seperator"><h2>Portfolio</h2></div>
       <section id='portfolio'>
       <div class='row col s10 m10 offset-m1 center'>
       <ul id="portfolio-list">
-        <li ng-repeat="project in main.projects" class= 'col s10  m2 '>  
+        <li ng-repeat="project in main.projects" class= 'col s10  m3 '>  
         <div class="card hoverable">
     <div class="card-image waves-effect waves-block waves-light">
       <img class="activator" src='{{ project.screenshot }}' >
@@ -105,10 +108,21 @@
   </li>
       </ul>
       </div>
+      
       </section>
-                </div>
+
+<div class="row">
+        <div class="seperator">
+          <h2>Contact</h2></div>
+        </div>
       <section id='contact'>
-        <h2 class="center">Contact</h2>
+        <div id="contact_image">
+          <div class="center"id="image_frame">
+        <img src="https://media.licdn.com/mpr/mpr/shrink_200_200/p/8/005/04c/043/3535034.jpg">
+        </div>
+      </div>
+        
+        </div>
           <div class="row">
     <form class="col s10 offset-s1 offset-l2"   action="mailto:kevin_t_rogers@hotmail.com, kevin@spicymonkeymedia.com"
   method="POST"
@@ -162,9 +176,9 @@
 
   
     </body>
-      <footer class="page-footer grey darken-1">
+      <footer class="page-footer grey darken-1 flow-text">
     <div class="footer_row row center">
-      <ul class="footer_menu col offset-s2 s4">
+      <ul class="footer_menu col offset-s2 s4 m6">
         <li class="footer_item"><a href="#home">
           Home
         </a></li>
@@ -180,7 +194,7 @@
 
 
       </ul>
-      <ul class="footer_menu col offset-s2 s4">
+      <ul class="footer_menu col offset-s2 s4 m6">
         <li class="footer_item">
 
           <a href="https://twitter.com/kevin_t_rogers">

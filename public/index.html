@@ -22,6 +22,7 @@
 
 <body ng-app="app" ng-controller="MainController as main">
     <nav class="grey darken-4">
+
         <div class="nav-wrapper center">
 
             <ul id="nav-mobile">
@@ -35,25 +36,26 @@
 
             </ul>
         </div>
+
     </nav>
     <section id='home'>
-        <a href="#" class="nav_logo brand-logo center "><span>Spicy</span><img   alt="Spicy Monkey Media" src="http://spicymonkeymedia.com/images/spicymonkey_logo.png"><span>Monkey</span></a>
+        <div class='row center'>
+            <a href="#" class="nav_logo brand-logo center "><span>Spicy</span><img alt="Spicy Monkey Media" src="http://spicymonkeymedia.com/images/spicymonkey_logo.png"><span>Monkey</span></a>
+        </div>
+        <div class='row center'>
+            <ul class="social-media-links">
 
-        <ul class="social-media-links">
+                <li ng-repeat="media in main.social_media" class="col s10 offset-s1 m2 offset-m1">
 
-            <li ng-repeat="media in main.social_media">
-                <div class="row">
-                    <div class="col s10 offset-s1 m2 offset-m1">
-                        <a href="{{media.link}}"><span class="flow-text">{{media.title}}</span></a>
-                    </div>
-                </div>
-            </li>
-        </ul>
+                    <a class="col s10 offset-s1 m2 offset-m1" href="{{media.link}}"><span class="flow-text">{{media.title}}</span></a>
+
+                </li>
+            </ul>
 
     </section>
     <section id='about'></section>
     <div class="container">
-        <article class=' about_text flow-text'>
+        <article class='about_text flow-text'>
             <p>As a boy, I loved board games. Whenever someone in my family brought a new game home, I always wanted to be the first one to read the rules. I knew that the better I understood the rules, The better prepared I would be to develop an effective
                 strategy. It also gave me the opportunity to explain the rules and to change them for my younger siblings so that they could enjoy the games more.</p>
             <p>I still enjoy board games, but I wrote about this because I find that web development follows similar logic. Learning the rules (languages, frameworks, methods, tools, etc.), allows one to develop better strategies for increasing workflow
@@ -77,26 +79,27 @@
             </p>
 
         </article>
-        <section id='portfolio'></section>
-        <div class='row'>
-            <ul id="portfolio-list">
-                <li ng-repeat="project in main.projects" class=' '>
-                    <div class="card hoverable">
-                        <div class="card-image waves-effect waves-block waves-light">
-                            <img class="activator" src='{{ project.screenshot }}'>
+        <section id='portfolio'>
+            <div class='row col s10 m10 offset-m1 center'>
+                <ul id="portfolio-list">
+                    <li ng-repeat="project in main.projects" class='col s10  m2 '>
+                        <div class="card hoverable">
+                            <div class="card-image waves-effect waves-block waves-light">
+                                <img class="activator" src='{{ project.screenshot }}'>
+                            </div>
+                            <div class="card-content">
+                                <span class="card-title activator grey-text text-darken-4">{{project.title}}<i class="material-icons right">more_vert</i></span>
+                                <p><a href="{{ project.link }}">See Project</a></p>
+                            </div>
+                            <div class="card-reveal">
+                                <span class="card-title black-text ">{{ projects.title }}<i class="material-icons right">close</i></span>
+                                <p class="technology">Technologies used:<br><span>{{ project.description }}</span></p>
+                            </div>
                         </div>
-                        <div class="card-content">
-                            <span class="card-title activator grey-text text-darken-4">{{project.title}}<i class="material-icons right">more_vert</i></span>
-                            <p><a href="{{ project.link }}">See Project</a></p>
-                        </div>
-                        <div class="card-reveal">
-                            <span class="card-title black-text ">{{ projects.title }}<i class="material-icons right">close</i></span>
-                            <p class="technology">Technologies used:<br><span>{{ project.description }}</span></p>
-                        </div>
-                    </div>
-                </li>
-            </ul>
-        </div>
+                        <div class='col s1 m0'></div>
+                    </li>
+                </ul>
+            </div>
         </section>
     </div>
     <section id='contact'>
@@ -156,7 +159,7 @@
 </body>
 <footer class="page-footer grey darken-1">
     <div class="footer_row row center">
-        <ul class="footer_menu col offset-s1 l4 offset-l2">
+        <ul class="footer_menu col offset-s2 s4">
             <li class="footer_item"><a href="#home">
           Home
         </a></li>
@@ -172,7 +175,7 @@
 
 
         </ul>
-        <ul class="footer_menu col s5 offset-s1 m4 offset-m2">
+        <ul class="footer_menu col offset-s2 s4">
             <li class="footer_item">
 
                 <a href="https://twitter.com/kevin_t_rogers">

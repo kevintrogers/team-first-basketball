@@ -2,7 +2,9 @@
 
 $primary-color: #fff;
 $secondary-color: #000;
-$tertiary-color: #2C6A79;
+$tertiary-color: #808080;
+$quaternary-color: #2C6A79;
+$quinary-color: dodgerblue;
 
 $title-font: 'Yellowtail', cursive; 
 $serif-font: 'Roboto Slab', serif;
@@ -23,6 +25,21 @@ nav{
 .social-media-links{
     font-family: $sans-font;
     
+}
+#contact_image {
+    height:20em;
+}
+#image_frame {
+    background: $quinary-color;
+    height:50%;
+    border-bottom: 4px solid $quaternary-color;
+
+    
+}
+#image_frame img{
+    border-radius: 50%;
+    size: 10em 10em;
+    margin-top: 2em;
 }
 
 /*
@@ -118,10 +135,9 @@ and (min-device-width : 768px)
 /* Styles */
 #nav-mobile {
 display: inline;
-    text-align: center;
-
-    
+text-align: center
 }
+
 }
 
 /* iPads (landscape) ----------- */
@@ -144,11 +160,39 @@ and (orientation : portrait) {
 @media only screen 
 and (min-width : 1224px) {
 /* Styles */
+.seperator {
+    text-align: center;
+    border-bottom: 2px solid $quaternary-color;
+    margin-bottom: 4.5rem;
+}
+.social-media-links {
+    display: inline-flex;
+    top: 22em;
+    position: relative;
+
+}
 .social-media-links li {
     display: inline-block;
-    margin: 0 1em 2em;
+    margin: 0 3em 2em;
     width: 13em;
     text-align: center;
+}
+.social-media-links li a {
+    width: 14.5em !important;
+}
+#portfolio-list li {
+    margin: 0;
+}
+.seperator h2 {
+background: #FFF none repeat scroll 0% 0%;
+    color: #000;
+    display: inline-block;
+    margin-bottom: 1.5rem;
+    font-weight: 900;
+    padding: 0px 10px;
+    position: relative;
+    text-transform: uppercase;
+    top: 1em;
 }
 }
 

@@ -6,6 +6,19 @@ nav {
 .social-media-links {
   font-family: "Montserrat", sans-serif; }
 
+#contact_image {
+  height: 20em; }
+
+#image_frame {
+  background: dodgerblue;
+  height: 50%;
+  border-bottom: 4px solid #2C6A79; }
+
+#image_frame img {
+  border-radius: 50%;
+  size: 10em 10em;
+  margin-top: 2em; }
+
 /*
  * Author: http://stuffandnonsense.co.uk/blog/about/hardboiled_css3_media_queries/
  */
@@ -70,11 +83,33 @@ nav {
 /* Desktops and laptops ----------- */
 @media only screen and (min-width: 1224px) {
   /* Styles */
+  .seperator {
+    text-align: center;
+    border-bottom: 2px solid #2C6A79;
+    margin-bottom: 4.5rem; }
+  .social-media-links {
+    display: inline-flex;
+    top: 22em;
+    position: relative; }
   .social-media-links li {
     display: inline-block;
-    margin: 0 1em 2em;
+    margin: 0 3em 2em;
     width: 13em;
-    text-align: center; } }
+    text-align: center; }
+  .social-media-links li a {
+    width: 14.5em !important; }
+  #portfolio-list li {
+    margin: 0; }
+  .seperator h2 {
+    background: #FFF none repeat scroll 0% 0%;
+    color: #000;
+    display: inline-block;
+    margin-bottom: 1.5rem;
+    font-weight: 900;
+    padding: 0px 10px;
+    position: relative;
+    text-transform: uppercase;
+    top: 1em; } }
 
 /* Large screens ----------- */
 /* iPhone 4 ----------- */
