@@ -9,11 +9,7 @@ browserSync = require('browser-sync').create(),
 gulp.task('default', ['watch']);
 
 // configure the jshint task
-gulp.task('jshint', function() {
-  return gulp.src('monkey-playground/js/**/*.js')
-    .pipe(jshint())
-    .pipe(jshint.reporter('jshint-stylish'));
-});
+
 
 
 

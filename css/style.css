@@ -1,115 +1,108 @@
-@import url(https://fonts.googleapis.com/css?family=Yellowtail|Montserrat|Roboto+Slab:400,700);
+@import url(https://fonts.googleapis.com/css?family=Permanent+Marker|Oswald:400,300,700);
+#home {
+  background: url("http://u83341670@s605611687.onlinehome.us/img/outside_court.jpg") center;
+  background-size: cover;
+  height: 85vh;
+  font-family: "Oswald";
+  font-style: italic;
+  font-variant: small-caps; }
+
+.brand-logo {
+  color: yellow !important;
+  text-shadow: 0 0 .5em purple;
+  font-variant: normal; }
+
+@keyframes bounce {
+  0% {
+    transform: translate(0%, 0%) rotate(15deg); }
+  5% {
+    transform: translate(50%, 20%) rotate(30deg); }
+  15% {
+    transform: translate(150%, 60%) rotate(45deg); }
+  30% {
+    transform: translate(300%, 120%) rotate(90deg); }
+  40% {
+    transform: translate(400%, 160%) rotate(120deg); }
+  50% {
+    transform: translate(500%, 200%) rotate(150deg); }
+  60% {
+    transform: translate(950%, 150%) rotate(180deg); }
+  70% {
+    transform: translate(1150%, 100%) rotate(210deg); }
+  80% {
+    transform: translate(1350%, 50%) rotate(240deg); }
+  90% {
+    transform: translate(1550%, 0%) rotate(270deg);
+    padding-bottom: 8px; }
+  95% {
+    transform: translate(1650%, -25%) rotate(285deg); }
+  97% {
+    transform: translate(1675%, -37.5%) rotate(292deg); }
+  99% {
+    transform: translate(1725%, -48%) rotate(295deg); }
+  100% {
+    transform: translate(1750%, -50%) rotate(300deg); } }
+
 nav {
-  color: #fff;
-  font-family: "Montserrat", sans-serif; }
+  background: transparent;
+  box-shadow: none;
+  position: fixed !important; }
 
-.social-media-links {
-  font-family: "Montserrat", sans-serif; }
-
-#contact_image {
-  height: 20em; }
-
-#image_frame {
-  background: dodgerblue;
-  height: 50%;
-  border-bottom: 4px solid #2C6A79; }
-
-#image_frame img {
+nav li {
+  font-family: "Permanent Marker", cursive;
+  font-size: 1.1em;
   border-radius: 50%;
-  size: 10em 10em;
-  margin-top: 2em; }
+  width: 4.4em;
+  height: 4.4em;
+  margin: 0 .6em 0 .6em;
+  background: url("/img/basketball.png") center;
+  background-size: cover;
+  position: relative;
+  overflow: visible; }
+
+.bounce {
+  animation-name: bounce;
+  animation-duration: 1.05s; }
+
+nav li a {
+  padding: 0 !important;
+  text-align: center;
+  font-variant: small-caps; }
+
+nav li a:hover {
+  background: none; }
+
+section {
+  margin: 10px 0; }
+
+.tab-title {
+  text-align: center; }
 
 /*
  * Author: http://stuffandnonsense.co.uk/blog/about/hardboiled_css3_media_queries/
  */
 /* Smartphones (portrait and landscape) ----------- */
 @media only screen and (min-device-width: 320px) {
-  #home {
-    height: 35em;
-    background: url("http://u83341670@s605611687.onlinehome.us/images/night_sky_3.jpg") no-repeat center;
-    background-size: 100% 100%; }
+  nav {
+    position: static; }
+  nav li {
+    float: none;
+    text-align: center; }
   .brand-logo {
-    font-family: "Yellowtail", cursive;
-    color: #fff;
-    top: 2.2em;
-    position: relative; }
-  .brand-logo img {
-    height: 4em;
-    width: 4em;
-    border-radius: 50%; }
-  .brand-logo span {
     position: relative;
-    font-size: 1.8em;
-    padding: 0 .4em;
-    bottom: .8em; }
-  #nav-mobile {
-    margin-top: 8em;
-    display: inline; }
-  #nav-mobile li {
-    display: inline-block;
-    float: none !important; }
-  .social-media-links {
-    display: block; }
-  .social-media-links li {
-    height: 3em;
-    padding-top: .35em;
-    margin: 1em 0; }
-  .social-media-links li a {
-    color: #fff;
-    border: 2px solid #fff; }
-  .center {
-    float: none !important; }
-  #portfolio-list {
-    display: inline;
-    list-style: none;
-    float: none !important; }
-  #portfolio-list li {
-    display: inline-block;
-    margin: .1em 16.66666%; }
-  li .card {
-    width: 85%; } }
+    margin-top: 2em; }
+  .mytab {
+    margin-bottom: 1.1em; }
+  .tab-button {
+    font-variant: large-caps;
+    text-align: center;
+    font-weight: 900; } }
 
 /* Smartphones (landscape) ----------- */
 /* Smartphones (portrait) ----------- */
 /* iPads (portrait and landscape) ----------- */
-@media only screen and (min-device-width: 768px) {
-  /* Styles */
-  #nav-mobile {
-    display: inline;
-    text-align: center; } }
-
 /* iPads (landscape) ----------- */
 /* iPads (portrait) ----------- */
 /* Desktops and laptops ----------- */
-@media only screen and (min-width: 1224px) {
-  /* Styles */
-  .seperator {
-    text-align: center;
-    border-bottom: 2px solid #2C6A79;
-    margin-bottom: 4.5rem; }
-  .social-media-links {
-    display: inline-flex;
-    top: 22em;
-    position: relative; }
-  .social-media-links li {
-    display: inline-block;
-    margin: 0 3em 2em;
-    width: 13em;
-    text-align: center; }
-  .social-media-links li a {
-    width: 14.5em !important; }
-  #portfolio-list li {
-    margin: 0; }
-  .seperator h2 {
-    background: #FFF none repeat scroll 0% 0%;
-    color: #000;
-    display: inline-block;
-    margin-bottom: 1.5rem;
-    font-weight: 900;
-    padding: 0px 10px;
-    position: relative;
-    text-transform: uppercase;
-    top: 1em; } }
-
 /* Large screens ----------- */
 /* iPhone 4 ----------- */

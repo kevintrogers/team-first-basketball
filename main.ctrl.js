@@ -1,102 +1,31 @@
-angular.module('app').controller("MainController", function(){
+  angular.module('app').controller("MainController", function(){
     var vm = this;
-    vm.title = 'Spicy Monkey Media';
-    vm.pages = [
-        {
-            title:'Home',
-            abbr:'H',
-            link:'#home'
-        },
-        {
-            title:'About',
-            abbr:'A',
-            link:'#about',
-        },
-        {
-            title:'Portfolio',
-            abbr:'P',
-            link:'#portfolio'
-        },
-        {
-            title:'Contact',
-            abbr:'C',
-            link:'#contact'
-        }
-        ];
-vm.social_media = [
-        {
-            title:'Twitter',
-            link:'https://twitter.com/kevin_t_rogers'
-        },
-        {
-            title:'Linkedin',
-            link:'"https://www.linkedin.com/profile/view?id=AAIAAAmBUKoBdbOrqAwzQRxcyyy6wp_9xl90TVk&trk=nav_responsive_tab_profile'
-        },
-        {
-            title:'Github',
-            link:'https://github.com/kevintrogers'
-        },
-        {
-            title:'FreeCodeCamp',
-            link:'http://freecodecamp.com/kevintrogers'
-        }
-        ];
-vm.projects = [
-        {
-            title:'Twitter',
-            link:'https://twitter.com/kevin_t_rogers',
-            screenshot:'http://spicymonkeymedia.com/images/spicymonkey_logo.png',
-            description:'This that teh other thing'
-        },
-        {
-            title:'Twitter',
-            link:'https://twitter.com/kevin_t_rogers',
-            screenshot:'http://spicymonkeymedia.com/images/spicymonkey_logo.png',
-            description:'Blah Blah Blah'
-            
-        },
-        {
-            title:'Twitter',
-            link:'https://twitter.com/kevin_t_rogers',
-            screenshot:'http://spicymonkeymedia.com/images/spicymonkey_logo.png',
-            description:'Yada Yada Yada'
-        },
-        {
-            title:'Twitter',
-            link:'https://twitter.com/kevin_t_rogers',
-            screenshot:'',
-            description:''
-        },
-                {
-            title:'Twitter',
-            link:'https://twitter.com/kevin_t_rogers',
-            screenshot:'',
-            description:''
-        },
-                {
-            title:'Twitter',
-            link:'https://twitter.com/kevin_t_rogers',
-            screenshot:'',
-            description:''
-        },
-                {
-            title:'Twitter',
-            link:'https://twitter.com/kevin_t_rogers',
-            screenshot:'',
-            description:''
-        },
-                {
-            title:'Twitter',
-            link:'https://twitter.com/kevin_t_rogers',
-            screenshot:'',
-            description:''
-        },
-                {
-            title:'Twitter',
-            link:'https://twitter.com/kevin_t_rogers',
-            screenshot:'',
-            description:''
-        },
-        ];
-
-});
+  vm.title = '1 on 1 Basketball';
+  vm.services = [{
+    service: 'Offensive Skills',
+    description: 'The player(s) will learn basic and advanced offensive skills such as fakes, shooting, passing' +
+    'and isolation strategies.',
+    pic:'/img/offense.jpg'
+  }, {
+    service: 'Defensive Skills',
+    description: 'The player(s) will learn basic and advanced defense skills such as defensive schemes, spacing,' + 
+    'rotations, and more...',
+    pic:'/img/defense.jpg'
+  }, {
+    service: 'Ball Handling Skills',
+    description: 'Ball handling skills are essential to all basketball players but a guard needs to espeicially' +
+    'refine these skills through drills and intense practice.',
+    pic:'/img/ballhandling.jpg'
+  }, {
+    service: 'Post Play',
+    description: 'As the game evolves it is becoming more and more esssential for all players to have a balanced' +
+    'offensive game in order to take advantage of mismatches.',
+    pic: '/img/post.jpg'
+  }, {
+    service: 'Group and Indivdual Instruction',
+    description: 'The player(s) will learn basic and advanced offensive skills such as fakes, shooting, passing' +
+    'and isolation strategies',
+    pic: '/img/group.jpg'
+  } 
+                ];
+  });
