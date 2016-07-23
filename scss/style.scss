@@ -114,6 +114,23 @@ section {
 .tab-title {
     text-align:center;
 }
+#contact img {
+    height: 18em;
+    width: 18em;
+    
+}
+#message {
+    border: 1px solid #808080;
+    border-radius: 20px;
+    height: 6em;
+    padding: .5em;
+} 
+#message-field {
+    margin-top: 3rem;
+}
+#message-label {
+    top: -2rem;
+}
 /*
  * Author: http://stuffandnonsense.co.uk/blog/about/hardboiled_css3_media_queries/
  */
