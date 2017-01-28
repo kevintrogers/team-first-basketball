@@ -1,6 +1,6 @@
   angular.module('app').controller("MainController", function(){
     var vm = this;
-  vm.title = '1 on 1 Basketball';
+  vm.title = 'Team First Basketball';
   vm.services = [{
     service: 'Offensive Skills',
     description: 'The player(s) will learn basic and advanced offensive skills such as fakes, shooting, passing' +

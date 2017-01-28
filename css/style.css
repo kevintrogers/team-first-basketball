@@ -9,7 +9,7 @@
 
 .brand-logo {
   color: yellow !important;
-  text-shadow: 0 0 .5em purple;
+  text-shadow: 0 0 .5em rebeccapurple;
   font-variant: normal; }
 
 @keyframes bounce {
@@ -46,7 +46,9 @@
 nav {
   background: transparent;
   box-shadow: none;
-  position: fixed !important; }
+  position: fixed !important;
+  height: auto;
+  z-index: 999; }
 
 nav li {
   font-family: "Permanent Marker", cursive;
@@ -58,7 +60,9 @@ nav li {
   background: url("/img/basketball.png") center;
   background-size: cover;
   position: relative;
-  overflow: visible; }
+  overflow: visible;
+  float: none !important;
+  display: inline-block; }
 
 .bounce {
   animation-name: bounce;
@@ -67,7 +71,8 @@ nav li {
 nav li a {
   padding: 0 !important;
   text-align: center;
-  font-variant: small-caps; }
+  font-variant: small-caps;
+  text-shadow: 1px 1px 1px rebeccapurple; }
 
 nav li a:hover {
   background: none; }
