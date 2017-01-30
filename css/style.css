@@ -7,11 +7,12 @@
   font-style: italic;
   font-variant: small-caps; }
 
-.brand-logo {
-  color: yellow !important;
+/*.brand-logo {
+      color: yellow !important;
   text-shadow: 0 0 .5em rebeccapurple;
-  font-variant: normal; }
-
+  font-variant:normal;
+  
+}*/
 @keyframes bounce {
   0% {
     transform: translate(0%, 0%) rotate(15deg); }
@@ -109,9 +110,10 @@ section {
   nav li {
     float: none;
     text-align: center; }
-  .brand-logo {
+  /*.brand-logo {/
     position: relative;
-    margin-top: 2em; }
+    margin-top: 2em;
+}*/
   .mytab {
     margin-bottom: 1.1em; }
   .tab-button {
