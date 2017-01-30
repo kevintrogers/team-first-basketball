@@ -114,6 +114,8 @@ section {
     position: relative;
     margin-top: 2em;
 }*/
+  img.activator {
+    height: 200px; }
   .mytab {
     margin-bottom: 1.1em; }
   .tab-button {
