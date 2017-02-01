@@ -86,7 +86,7 @@
       <p>{{service.description}}</p>
     </div>
   </div>
-  <!--mytabs-->
+  </ul>
       </div>
       
       
@@ -133,7 +133,19 @@
   </div>
     </div>
   </section>
-  <section id='testimonials'></section>
+  <section id='testimonials'>
+    <ul id='testimonial-list' ng-repeat="testimonial in main.testimonials">
+      <li>
+        <div class='card'>
+         <img src={{testimony.pic}} class='circle testimony-img'>
+         <p class='testimony-text'>{{testinony.testimony}}</p>
+         <span class='testimony-source'>{{testimony.name}}</span>
+         </p>
+        </div>
+        
+      </li>
+    </ul>
+  </section>
 
 
   <footer>

@@ -73,7 +73,7 @@ nav li a {
   padding: 0 !important;
   text-align: center;
   font-variant: small-caps;
-  text-shadow: 1px 1px 1px rebeccapurple; }
+  text-shadow: 0 0 8px rebeccapurple; }
 
 nav li a:hover {
   background: none; }

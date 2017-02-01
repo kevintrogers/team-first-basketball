@@ -17,4 +17,18 @@
     pic:'/img/conditioning.svg'
   }
                 ];
+  vm.testimonials = [{
+    pic: '',
+    name: '',
+    testimony: ''
+  }, {
+    pic: '',
+    name: '',
+    testimony: ''
+  }, {
+    pic: '',
+    name: '',
+    testimony: ''
+  } 
+  ]
   });
