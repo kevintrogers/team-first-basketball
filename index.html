@@ -125,8 +125,9 @@
           <textarea id="message" class="materialize-textarea"></textarea>
           <label id='message-label' for="message">Message</label>
         </div>
+        </div>
         <div class='row center'>
-          <button action='mailto:coachdavis@teamfirstbasketball.com,kevin_t_rogers@hotmail.com' class='btn'>Send</button>
+          <button action='mailto:coachdavis@teamfirstbasketball.com, kevin_t_rogers@hotmail.com' class='btn'>Send</button>
         </div>
       </div>
     </form>
@@ -137,7 +138,7 @@
     <ul id='testimonial-list' ng-repeat="testimonial in main.testimonials">
       <li>
         <div class='card'>
-         <img src={{testimony.pic}} class='circle testimony-img'>
+         <img src='{{testimony.pic}}' class='circle testimony-img'>
          <p class='testimony-text'>{{testinony.testimony}}</p>
          <span class='testimony-source'>{{testimony.name}}</span>
          </p>
