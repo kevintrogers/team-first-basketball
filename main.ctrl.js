@@ -23,12 +23,12 @@
     position: 'Varsity Basketball Player',
     testimony: 'Coach Davis helped me to improve my ball handling skills so I saw an increase in playing time my senior year.'
   }, {
-    pic: 'img/stephanie-mccollough.jpeg',
+    pic: 'img/stephanie-mccollough.png',
     name: 'Stephanie McCollough',
-    position: "Girl/'s Varsity Coach, Bassett High School",
+    position: 'Girl\'s Varsity Coach, Bassett High School',
     testimony: 'Steve is very dedicated to coaching and was able to consistently get the best out of our players.'
   }, {
-    pic: 'img/terrence-mack.jpeg',
+    pic: 'img/terrence-mack.png',
     name: 'Terrence Mack',
     position: 'Saddleback College Basketball',
     testimony: 'Coach Davis guidance in the weight room helped make the physical adjustments of the game from high school to college easier.'

@@ -123,7 +123,10 @@ section {
   .tab-button {
     font-variant: large-caps;
     text-align: center;
-    font-weight: 900; } }
+    font-weight: 900; }
+  #testimonial-list .card img {
+    height: 100%;
+    width: 100%; } }
 
 /* Smartphones (landscape) ----------- */
 /* Smartphones (portrait) ----------- */

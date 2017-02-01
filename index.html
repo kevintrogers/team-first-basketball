@@ -135,21 +135,27 @@
     </div>
   </section>
   <section id='testimonials'>
+  <div class='row'>
     <ul id='testimonial-list' ng-repeat="testimonial in main.testimonials">
-      <li>
-        <div class='card'>
-         <img src='{{testimony.pic}}' class='circle testimony-img'>
-         <p class='testimony-text'>{{testinony.testimony}}</p>
-         <span class='testimony-source'>{{testimony.name}}</span>
+      
+      <li class='center'>
+        <div class='card col s10 offset-s1 m4'>
+         <img src='{{testimonial.pic}}' class='circle center'>
+         <p class='testimony-text'><em>"{{testimonial.testimony}}"</em></p>
+         <span class='testimony-source'><strong>{{testimonial.name}}</strong>, {{testimonial.position}}</span>
          </p>
         </div>
-        
+     </div>   
       </li>
     </ul>
   </section>
 
 
   <footer>
+    <div class=-'row violet lighten-3'>
+      <span class='copyright'>&copy;2017 Spicy Monkey Media</span>
+    </div>
+    
 </footer>
   </body>
   </html>
