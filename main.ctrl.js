@@ -18,8 +18,8 @@
   }
                 ];
   vm.testimonials = [{
-    pic: 'img/james-adams.jpeg',
-    name: 'James Adams',
+    pic: 'img/jaime-velasquez.png',
+    name: 'Jaime Velasquez',
     position: 'Varsity Basketball Player',
     testimony: 'Coach Davis helped me to improve my ball handling skills so I saw an increase in playing time my senior year.'
   }, {
@@ -28,10 +28,10 @@
     position: 'Girl\'s Varsity Coach, Bassett High School',
     testimony: 'Steve is very dedicated to coaching and was able to consistently get the best out of our players.'
   }, {
-    pic: 'img/terrence-mack.png',
+    pic: 'img/terrence-mack.svg',
     name: 'Terrence Mack',
     position: 'Saddleback College Basketball',
-    testimony: 'Coach Davis guidance in the weight room helped make the physical adjustments of the game from high school to college easier.'
+    testimony: 'Coach Davis\' guidance in the weight room helped make the physical adjustments of the game from high school to college easier.'
   } 
   ]
   });
