@@ -95,10 +95,25 @@
     
   </div>
   </section>
+    <section id='testimonials'>
+  <div class='row'>
+    <ul id='testimonial-list center' class='col s12 m10 offset-m1'>
+      
+      <li class='card center col s10 offset-s1 m3 offset-m1' ng-repeat="testimonial in main.testimonials">
+        <div>
+         <img src='{{testimonial.pic}}' class='circle'>
+         <p class='testimony-text'><em>"{{testimonial.testimony}}"</em></p>
+         <span class='testimony-source'>{{testimonial.name}}</span><br><span class='testimony-position'><em>{{testimonial.position}}</em></span>
+         </p>
+        </div>
+     </div>   
+      </li>
+    </ul>
+  </section>
   <section id='contact'>
     <h2 class='center'>Contact Coach Davis</h2>
     <div class='row'>
-    <img class='center circle col s6 offset-s3 m2 offset-m5' src='img/coach.jpg'>
+    <img class='center circle col s6 offset-s3 m2 offset-m5' src='img/coach-davis.png'>
   <div class="row">
     <form class="col s12">
       <div class="row">
@@ -127,31 +142,17 @@
         </div>
         </div>
         <div class='row center'>
-          <button action='mailto:coachdavis@teamfirstbasketball.com, kevin_t_rogers@hotmail.com' class='btn'>Send</button>
+          <button action='mailto:coachdavis@teamfirstbasketball.com, kevin_t_rogers@hotmail.com' class='btn laker-btn'>Send</button>
         </div>
       </div>
     </form>
   </div>
     </div>
   </section>
-  <section id='testimonials'>
-  <div class='row'>
-    <ul id='testimonial-list center' class='col s12 m10 offset-m1'>
-      
-      <li class='card center col s10 offset-s1 m3 offset-m1' ng-repeat="testimonial in main.testimonials">
-        <div>
-         <img src='{{testimonial.pic}}' class='circle'>
-         <p class='testimony-text'><em>"{{testimonial.testimony}}"</em></p>
-         <span class='testimony-source'>{{testimonial.name}}</span><br><span class='testimony-position'><em>{{testimonial.position}}</em></span>
-         </p>
-        </div>
-     </div>   
-      </li>
-    </ul>
-  </section>
 
 
-  <footer class='purple lighten-2'>
+
+  <footer >
     <div class=-'row'>
       <span class='copyright'>&copy;2017 Spicy Monkey Media</span>
     </div>

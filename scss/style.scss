@@ -8,12 +8,12 @@ $basefont: 'Oswald';
 $bounce-time: 2s;
 
 #home {
-  background: url('http://u83341670@s605611687.onlinehome.us/img/outside_court.jpg') center;
+  background: url('/img/basketball-team.jpg') center;
   background-size: cover;
   height: 85vh;
   font-family: $basefont;
   font-style: italic;
- font-weight: 300;
+
 
 }
 /*.brand-logo {
@@ -143,6 +143,14 @@ section {
 }
 #message-label {
     top: -2rem;
+}
+.laker-btn {
+    background-color: $laker-purple;
+    color: $laker-gold;
+}
+footer {
+    background-color: $laker-purple;
+    color: $laker-gold;
 }
 /*
  * Author: http://stuffandnonsense.co.uk/blog/about/hardboiled_css3_media_queries/
