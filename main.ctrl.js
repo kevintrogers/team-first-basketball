@@ -25,12 +25,12 @@
   }, {
     pic: 'img/stephanie-mccollough.png',
     name: 'Stephanie McCollough',
-    position: 'Girl\'s Varsity Coach, Bassett High School',
+    position: 'Bassett High School',
     testimony: 'Steve is very dedicated to coaching and was able to consistently get the best out of our players.'
   }, {
     pic: 'img/terrence-mack.png',
     name: 'Terrence Mack',
-    position: 'Saddleback College Basketball',
+    position: 'Saddleback College',
     testimony: 'Coach Davis\' guidance in the weight room helped me to make the physical adjustments of the game from high school to college easier.'
   } 
   ]

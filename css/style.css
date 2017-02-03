@@ -124,9 +124,17 @@ section {
     text-align: center;
     font-weight: 900; }
   #testimonial-list .card img {
-    height: 200px;
-    width: 200px;
-    margin-top: .5em; } }
+    margin-top: .5em; }
+  .circle {
+    height: 100%;
+    width: 100%; }
+  p.testimony-text {
+    height: 7.5em; }
+  span-testimony-source {
+    font-weight: 900;
+    font-size: 1.15em; }
+  span.testimony-position {
+    font-size: .75em; } }
 
 /* Smartphones (landscape) ----------- */
 /* Smartphones (portrait) ----------- */

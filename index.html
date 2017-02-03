@@ -136,13 +136,13 @@
   </section>
   <section id='testimonials'>
   <div class='row'>
-    <ul id='testimonial-list center'  ng-repeat="testimonial in main.testimonials">
+    <ul id='testimonial-list center' class='col s12 m10 offset-m1'>
       
-      <li class='card center col s10 offset-s1 m3 '>
+      <li class='card center col s10 offset-s1 m3 offset-m1' ng-repeat="testimonial in main.testimonials">
         <div>
          <img src='{{testimonial.pic}}' class='circle'>
          <p class='testimony-text'><em>"{{testimonial.testimony}}"</em></p>
-         <span class='testimony-source'><strong>{{testimonial.name}}</strong>, <span>{{testimonial.position}}</span>
+         <span class='testimony-source'>{{testimonial.name}}</span><br><span class='testimony-position'><em>{{testimonial.position}}</em></span>
          </p>
         </div>
      </div>   
