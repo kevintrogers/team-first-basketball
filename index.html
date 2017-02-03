@@ -13,10 +13,10 @@
     <!--[if lt IE 9]>
   <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
   <![endif]-->
-    
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.3/jquery.min.js"></script>  
      <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.2/angular.min.js"></script>
-     <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.3/jquery.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.7/js/materialize.min.js"></script>
+ 
+   
     
     <script src="app.js"></script>
     <script src="main.ctrl.js"></script>
@@ -136,13 +136,13 @@
   </section>
   <section id='testimonials'>
   <div class='row'>
-    <ul id='testimonial-list' ng-repeat="testimonial in main.testimonials">
+    <ul id='testimonial-list center'  ng-repeat="testimonial in main.testimonials">
       
-      <li class='center'>
-        <div class='card col s10 offset-s1 m4'>
-         <img src='{{testimonial.pic}}' class='circle center'>
+      <li class='card center col s10 offset-s1 m3 '>
+        <div>
+         <img src='{{testimonial.pic}}' class='circle'>
          <p class='testimony-text'><em>"{{testimonial.testimony}}"</em></p>
-         <span class='testimony-source'><strong>{{testimonial.name}}</strong>, {{testimonial.position}}</span>
+         <span class='testimony-source'><strong>{{testimonial.name}}</strong>, <span>{{testimonial.position}}</span>
          </p>
         </div>
      </div>   

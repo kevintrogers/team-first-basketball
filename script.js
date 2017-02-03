@@ -1,9 +1,9 @@
- $(function(){
-  
-  var bounceButton = $("li.nav-li");
+ $(function() {
+  var active, bounceButton = $('.nav-li');
   
     bounceButton.click(function(){
-       $(this).toggleClass('bounce');
+       bounceButton.removeClass('bounce');
+       $(this).addClass('bounce');
        
 
     });
