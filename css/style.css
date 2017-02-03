@@ -140,7 +140,7 @@ footer {
     width: 100%; }
   p.testimony-text {
     height: 7.5em; }
-  span-testimony-source {
+  span.testimony-source {
     font-weight: 900;
     font-size: 1.15em; }
   span.testimony-position {
