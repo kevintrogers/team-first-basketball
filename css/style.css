@@ -131,10 +131,11 @@ footer a:hover {
     text-align: center; }
   nav i.material-icons {
     color: #fdb928; }
-  /*.brand-logo {/
+  #nav-mobile li {
+    padding: 0 10% 0 0; }
+  .brand-logo {
     position: relative;
-    margin-top: 2em;
-}*/
+    margin-top: 2em; }
   svg image {
     fill: #1976d2; }
   img.activator {
