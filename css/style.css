@@ -1,9 +1,9 @@
-@import url(https://fonts.googleapis.com/css?family=Oswald:400,300,700);
+@import url(https://fonts.googleapis.com/css?family=Oswald:400,300,700|Lato);
 #home {
   background: url("/img/basketball-team.jpg") center;
   background-size: cover;
   height: 85vh;
-  font-family: "Oswald";
+  font-family: "Oswald", cursive;
   font-style: italic; }
 
 /*.brand-logo {
@@ -42,6 +42,21 @@
     transform: translate(1725%, -48%) rotate(295deg); }
   100% {
     transform: translate(1750%, -50%) rotate(300deg); } }
+
+h2 {
+  position: relative;
+  font-variant: small-caps;
+  font-family: "Oswald", cursive; }
+
+.seperator-row {
+  display: inline; }
+
+.seperator {
+  display: inline-block;
+  position: relative;
+  border-bottom: 3px solid #fdb928;
+  font-size: .5em;
+  top: 4rem; }
 
 nav {
   background: #552581;
@@ -133,11 +148,10 @@ footer {
     font-variant: large-caps;
     text-align: center;
     font-weight: 900; }
-  #testimonial-list .card img {
-    margin-top: .5em; }
-  .circle {
+  ul li img {
     height: 100%;
-    width: 100%; }
+    width: 100%;
+    margin-top: .5em; }
   p.testimony-text {
     height: 7.5em; }
   span.testimony-source {

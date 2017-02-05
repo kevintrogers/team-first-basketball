@@ -1,10 +1,10 @@
-@import url(https://fonts.googleapis.com/css?family=Oswald:400,300,700);
+@import url(https://fonts.googleapis.com/css?family=Oswald:400,300,700|Lato);
 
 $fancyfont: 'Oswald', cursive;
 $laker-purple: #552581;
 $laker-gold: #fdb928;
 
-$basefont: 'Oswald';
+$basefont: 'Oswald', cursive;
 $bounce-time: 2s;
 
 #home {
@@ -78,7 +78,22 @@ $bounce-time: 2s;
 }
      
 }
+h2 {
+    position: relative;
+    font-variant: small-caps;
+    font-family: $basefont;
 
+}
+.seperator-row {
+    display:inline;
+}
+.seperator{
+    display:inline-block;
+    position: relative;
+    border-bottom: 3px solid $laker-gold;
+    font-size:.5em;
+    top: 4rem;
+}
 nav {
   background:$laker-purple;
   box-shadow: none;
@@ -187,16 +202,13 @@ img.activator {
     text-align: center;
     font-weight: 900;
 }
-#testimonial-list .card img {
-
+ul li img {
+    height:100%;
+    width:100%;
     margin-top: .5em;
 
 }
-.circle {
-    height:100%;
-    width:100%;
-    
-}
+
 p.testimony-text {
     height: 7.5em;
 }
