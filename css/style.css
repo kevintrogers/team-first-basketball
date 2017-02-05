@@ -68,20 +68,6 @@ nav {
   height: auto;
   z-index: 999; }
 
-nav li {
-  font-family: "Oswald", cursive;
-  font-size: 1.1em;
-  border-radius: 50%;
-  width: 4.4em;
-  height: 4.4em;
-  margin: 0 .6em 0 .6em;
-  background: #fd6500 url("/img/basketball.svg") center;
-  background-size: cover;
-  position: relative;
-  overflow: visible;
-  float: none !important;
-  display: inline-block; }
-
 .bounce {
   animation: bounce 1.05s; }
 
@@ -143,6 +129,8 @@ footer a:hover {
   nav li {
     float: none;
     text-align: center; }
+  nav i.material-icons {
+    color: #fdb928; }
   /*.brand-logo {/
     position: relative;
     margin-top: 2em;
@@ -172,6 +160,22 @@ footer a:hover {
 /* Smartphones (landscape) ----------- */
 /* Smartphones (portrait) ----------- */
 /* iPads (portrait and landscape) ----------- */
+@media only screen and (min-device-width: 768px) {
+  /* Styles */
+  nav li {
+    font-family: "Oswald", cursive;
+    font-size: 1.1em;
+    border-radius: 50%;
+    width: 4.4em;
+    height: 4.4em;
+    margin: 0 .6em 0 .6em;
+    background: #fd6500 url("/img/basketball.svg") center;
+    background-size: cover;
+    position: relative;
+    overflow: visible;
+    float: none !important;
+    display: inline-block; } }
+
 /* iPads (landscape) ----------- */
 /* iPads (portrait) ----------- */
 /* Desktops and laptops ----------- */
