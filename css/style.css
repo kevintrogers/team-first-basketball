@@ -6,7 +6,7 @@
   font-family: "Oswald", cursive;
   font-style: italic;
   position: relative;
-  bottom: -64px;
+  top: 64px;
   margin-bottom: 64px; }
 
 /*.brand-logo {
@@ -125,6 +125,12 @@ section {
 
 footer {
   background-color: #552581;
+  color: #fdb928; }
+
+footer a {
+  color: #fff; }
+
+footer a:hover {
   color: #fdb928; }
 
 /*

@@ -14,10 +14,8 @@ $bounce-time: 2s;
   font-family: $basefont;
   font-style: italic;
   position: relative;
-  bottom: -64px;
+  top: 64px;
   margin-bottom: 64px;
-
-
 }
 /*.brand-logo {
       color: yellow !important;
@@ -168,6 +166,12 @@ section {
 }
 footer {
     background-color: $laker-purple;
+    color: $laker-gold;
+}
+footer a {
+    color:#fff;
+}
+footer a:hover {
     color: $laker-gold;
 }
 /*
