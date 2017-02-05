@@ -4,7 +4,10 @@
   background-size: cover;
   height: 85vh;
   font-family: "Oswald", cursive;
-  font-style: italic; }
+  font-style: italic;
+  position: relative;
+  bottom: -64px;
+  margin-bottom: 64px; }
 
 /*.brand-logo {
       color: yellow !important;

@@ -13,6 +13,9 @@ $bounce-time: 2s;
   height: 85vh;
   font-family: $basefont;
   font-style: italic;
+  position: relative;
+  bottom: -64px;
+  margin-bottom: 64px;
 
 
 }
