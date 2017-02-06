@@ -126,6 +126,8 @@ footer a:hover {
 @media only screen and (min-device-width: 320px) {
   nav {
     position: static; }
+  #nav-mobile {
+    padding: 0 0 0 12.5%; }
   nav li {
     float: none;
     text-align: center; }
@@ -165,6 +167,8 @@ footer a:hover {
 /* iPads (portrait and landscape) ----------- */
 @media only screen and (min-device-width: 768px) {
   /* Styles */
+  #nav-mobile {
+    padding: 0; }
   nav li {
     font-family: "Oswald", cursive;
     font-size: 1.1em;

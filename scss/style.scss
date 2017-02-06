@@ -167,10 +167,13 @@ footer a:hover {
 @media only screen 
 and (min-device-width : 320px) 
 {
-       nav{
+nav {
         position: static;
     }
-    nav li {
+#nav-mobile {
+    padding: 0 0 0 12.5%;
+}
+nav li {
 float: none;
 text-align: center;
 
@@ -239,6 +242,9 @@ and (max-width : 320px) {
 and (min-device-width : 768px) 
  {
 /* Styles */
+#nav-mobile {
+    padding: 0;
+}
 nav li {
   font-family:$fancyfont;
   font-size: 1.1em;
