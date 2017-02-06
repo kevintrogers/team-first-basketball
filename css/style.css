@@ -136,8 +136,10 @@ footer a:hover {
   .brand-logo {
     position: relative;
     margin-top: 2em; }
-  svg image {
-    fill: #1976d2; }
+  svg .activator {
+    fill: #1976d2;
+    color: #4590fe;
+    stroke: #000; }
   img.activator {
     height: 200px; }
   .mytab {
@@ -175,7 +177,9 @@ footer a:hover {
     position: relative;
     overflow: visible;
     float: none !important;
-    display: inline-block; } }
+    display: inline-block; }
+  #nav-mobile li {
+    padding: 0; } }
 
 /* iPads (landscape) ----------- */
 /* iPads (portrait) ----------- */

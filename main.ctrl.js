@@ -31,7 +31,7 @@
     pic: 'img/terrence-mack.png',
     name: 'Terrence Mack',
     position: 'Saddleback College',
-    testimony: 'Coach Davis\' guidance in the weight room helped me to make the physical adjustments of the game from high school to college easier.'
+    testimony: 'Coach Davis\' guidance in the weight room helped to make the physical adjustments of the game from high school to college easier.'
   } 
   ]
   });

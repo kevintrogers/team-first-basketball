@@ -34,7 +34,7 @@
     <nav>
       <div class="nav-wrapper row">
 
-        <ul id="nav-mobile" class="col s10 offset-s1 m12">
+        <ul id="nav-mobile" >
           <li class='nav-li '><a href="#home"></a><i class='material-icons hide-on-med-and-up'>home</i><span class='hide-on-small-only'>Home</span></a></li>
           <li class='nav-li '><a href="#about"><i class='material-icons hide-on-med-and-up'>info</i><span class='hide-on-small-only'>About</span></a></li>
           <li class='nav-li '><a href="#services"><i class='material-icons hide-on-med-and-up'>help</i><span class='hide-on-small-only'>Services</span></a></li>
@@ -74,17 +74,20 @@
   <li class="col s10 offset-s1 m4">
     <div class='card'>
        <div class="card-image waves-effect waves-block waves-light">
+         <svg>
       <img class="activator" src="{{service.pic}}">
+      </svg>
     </div>
     <div class="card-content">
-      <span class="card-title activator grey-text text-darken-4">{{service.service}}</span>
+      <span class="card-title activator grey-text text-darken-4">{{service.service}}
+      <i class="material-icons right">more_vert</i></span>
       
     </div>
    
     
     
     <div class="card-reveal">
-      <span class="grey-text text-darken-4">{{service.service}}<i class="material-icons right">close</i></span>
+      <span class="grey-text text-darken-4"><strong>{{service.service}}</strong><i class="material-icons right">close</i></span>
       <p>{{service.description}}</p>
     </div>
   </div>
@@ -100,7 +103,7 @@
    
   <section id='contact'>
         <div class='seperator-row row'>
-    <div class='col s2 offset-s1 seperator'></div><h2 class='col s6 m2 center'>Contact</h2><div class='col s2 seperator'></div>
+    <div class='col s2 offset-s1 offset-m3 seperator'></div><h2 class='col s6 m2 center'>Contact</h2><div class='col s2 seperator'></div>
     </div>
     <div class='row'>
     <img class='center circle col s6 offset-s3 m2 offset-m5' src='img/coach-davis.jpg'>
@@ -141,7 +144,7 @@
   </section>
  <section id='testimonials'>
     <div class='seperator-row row'>
-    <div class=' col s1 offset-s1 offset-m3 seperator'></div><h2 class='col s8 m2 center'>Testimonials</h2><div class='col s1 seperator'></div>
+    <div class=' col s1 offset-s1 m2 offset-m3 seperator'></div><h2 class='col s8 m2 center'>Testimonials</h2><div class='col s1 m2 seperator'></div>
     </div>
   <div class='row'>
     <ul id='testimonial-list center' class='col s12 l10 offset-l1'>
@@ -161,9 +164,11 @@
 
   <footer >
     <div class=-'row'>
-      <span class='copyright'>&copy;2017 Team First Basketball, Design by <a href='http://spicymonkeymedia.com/'>Spicy Monkey Media</a></span>
+      <span class='col offset-m1 copyright'>&copy;2017 Team First Basketball, Design by <a href='http://spicymonkeymedia.com/'>Spicy Monkey Media</a></span>
     </div>
     
 </footer>
   </body>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.98.0/js/materialize.min.js"></script>
+
   </html>

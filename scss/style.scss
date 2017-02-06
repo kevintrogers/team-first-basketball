@@ -185,8 +185,10 @@ nav i.material-icons {
     position: relative;
     margin-top: 2em;
 }
-svg image {
+ svg  .activator{
     fill: #1976d2;
+    color: #4590fe;
+    stroke: #000;
 }
 img.activator {
     height: 200px;
@@ -253,7 +255,9 @@ nav li {
  
  
 }
-
+#nav-mobile li {
+    padding: 0;
+}
 
 }
 
