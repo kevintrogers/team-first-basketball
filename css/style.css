@@ -7,14 +7,20 @@
   font-style: italic;
   position: relative;
   top: 64px;
-  margin-bottom: 64px; }
+  margin-bottom: 64px;
+  margin-top: 0; }
 
-/*.brand-logo {
-      color: yellow !important;
-  text-shadow: 0 0 .5em $laker-purple;
-  font-variant:normal;
-  
-}*/
+a.button-collapse {
+  clear: both;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 0;
+  padding-top: 1.5em !important; }
+
+.button-collapse img {
+  width: 5.5em;
+  height: 5.5em; }
+
 @keyframes bounce {
   0% {
     transform: translate(0%, 0%) rotate(15deg); }
@@ -125,9 +131,18 @@ footer a:hover {
 /* Smartphones (portrait and landscape) ----------- */
 @media only screen and (min-device-width: 320px) {
   nav {
-    position: static; }
+    position: intial; }
   #nav-mobile {
     padding: 0 0 0 12.5%; }
+  #nav-small {
+    position: relative;
+    margin: 0 auto;
+    display: block;
+    background-color: #f3e5f5; }
+  #nav-small li {
+    display: block !important;
+    text-align: center;
+    color: #552581; }
   nav li {
     float: none;
     text-align: center; }
