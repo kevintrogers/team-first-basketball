@@ -133,6 +133,11 @@ footer a:hover {
     text-align: center; }
   nav i.material-icons {
     color: #fdb928; }
+  .brand-logo img {
+    height: 5em;
+    width: 5em;
+    margin-left: auto;
+    margin-right: auto; }
   #nav-mobile li {
     padding: 0 10% 0 0; }
   .brand-logo {

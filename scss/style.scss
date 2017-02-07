@@ -167,6 +167,7 @@ footer a:hover {
 @media only screen 
 and (min-device-width : 320px) 
 {
+    
 nav {
         position: static;
     }
@@ -180,6 +181,12 @@ text-align: center;
 }
 nav i.material-icons {
     color: $laker-gold;
+}
+.brand-logo img {
+    height:5em;
+    width:5em;
+    margin-left:auto;
+    margin-right:auto;
 }
 #nav-mobile li {
     padding: 0 10% 0 0;
@@ -264,6 +271,7 @@ nav li {
 #nav-mobile li {
     padding: 0;
 }
+
 
 }
 
