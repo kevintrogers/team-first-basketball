@@ -172,6 +172,9 @@ footer a:hover {
 @media only screen 
 and (min-device-width : 320px) 
 {
+.nav-wrapper.row {
+    margin-bottom: 0;
+}    
     
 nav {
         position: initial;

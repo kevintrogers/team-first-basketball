@@ -128,6 +128,8 @@ footer a:hover {
  */
 /* Smartphones (portrait and landscape) ----------- */
 @media only screen and (min-device-width: 320px) {
+  .nav-wrapper.row {
+    margin-bottom: 0; }
   nav {
     position: initial; }
   #nav-mobile {
