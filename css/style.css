@@ -14,8 +14,7 @@ a.button-collapse {
   clear: both;
   margin-left: auto;
   margin-right: auto;
-  margin-top: 0;
-  padding-top: 1.5em !important; }
+  margin-top: 0; }
 
 .button-collapse img {
   width: 5.5em;
@@ -70,8 +69,7 @@ h2 {
 nav {
   background: #552581;
   box-shadow: none;
-  position: fixed !important;
-  height: auto;
+  height: 5.5em;
   z-index: 999; }
 
 .bounce {
@@ -131,18 +129,20 @@ footer a:hover {
 /* Smartphones (portrait and landscape) ----------- */
 @media only screen and (min-device-width: 320px) {
   nav {
-    position: intial; }
+    position: initial; }
   #nav-mobile {
     padding: 0 0 0 12.5%; }
   #nav-small {
     position: relative;
     margin: 0 auto;
     display: block;
-    background-color: #f3e5f5; }
+    background-color: #fdb928;
+    text-align: center; }
   #nav-small li {
     display: block !important;
     text-align: center;
-    color: #552581; }
+    clear: both;
+    float: none; }
   nav li {
     float: none;
     text-align: center; }
@@ -187,6 +187,8 @@ footer a:hover {
 /* iPads (portrait and landscape) ----------- */
 @media only screen and (min-device-width: 768px) {
   /* Styles */
+  nav {
+    position: fixed; }
   #nav-mobile {
     padding: 0; }
   nav li {
