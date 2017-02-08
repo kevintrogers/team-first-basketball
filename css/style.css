@@ -6,7 +6,6 @@
   font-family: "Oswald", cursive;
   font-style: italic;
   position: relative;
-  top: 64px;
   margin-bottom: 64px;
   margin-top: 0; }
 
@@ -128,6 +127,8 @@ footer a:hover {
  */
 /* Smartphones (portrait and landscape) ----------- */
 @media only screen and (min-device-width: 320px) {
+  #home {
+    top: 0; }
   .nav-wrapper.row {
     margin-bottom: 0; }
   nav {
@@ -160,12 +161,6 @@ footer a:hover {
   .brand-logo {
     position: relative;
     margin-top: 2em; }
-  svg .activator {
-    fill: #1976d2;
-    color: #4590fe;
-    stroke: #000; }
-  img.activator {
-    height: 200px; }
   .mytab {
     margin-bottom: 1.1em; }
   .tab-button {
@@ -189,6 +184,8 @@ footer a:hover {
 /* iPads (portrait and landscape) ----------- */
 @media only screen and (min-device-width: 768px) {
   /* Styles */
+  #home {
+    top: 64px; }
   nav {
     position: fixed; }
   #nav-mobile {
@@ -207,7 +204,17 @@ footer a:hover {
     float: none !important;
     display: inline-block; }
   #nav-mobile li {
-    padding: 0; } }
+    padding: 0; }
+  nav .brand-logo {
+    position: relative;
+    display: inline;
+    left: 50%;
+    top: -15em;
+    font-size: 1em; }
+  .brand-logo img {
+    display: inline-block;
+    height: 6.5em;
+    width: 6.5em; } }
 
 /* iPads (landscape) ----------- */
 /* iPads (portrait) ----------- */
