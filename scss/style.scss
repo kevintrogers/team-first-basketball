@@ -82,7 +82,6 @@ a.button-collapse {
     transform:translate(1750%, -50%) rotate(300deg);
  
 }
-     
 }
 h2 {
     position: relative;
@@ -182,6 +181,11 @@ nav {
         position: initial;
 
     }
+#sidenav-overlay {
+    background-color:rgba(0,0,0,0.0);
+    opacity: 0 !important;
+    visibility: hidden;
+}
 #nav-mobile {
     padding: 0 0 0 12.5%;
 }
@@ -200,6 +204,12 @@ nav {
     text-align:center;
     clear: both;
     float:none;
+}
+#nav-small li a {
+    font-weight: 900;
+    letter-spacing: .06rem;
+    color: #552581;
+    text-shadow: none;
 }
 nav li {
 float: none;
@@ -241,6 +251,7 @@ ul li img {
 img.activator{
     height:12em;
 }
+
 p.testimony-text {
     height: 7.5em;
 }
