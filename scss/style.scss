@@ -1,11 +1,14 @@
 @import url(https://fonts.googleapis.com/css?family=Oswald:400,300,700|Lato);
 
-$fancyfont: 'Oswald', cursive;
+$fancyfont: 'Oswald', san-serif;
 $laker-purple: #552581;
 $laker-gold: #fdb928;
 
-$basefont: 'Oswald', cursive;
+$basefont: 'Oswald', san-serif;
 $bounce-time: 2s;
+
+
+
 
 #home {
   background: url('/img/basketball-team.jpg') center;
@@ -220,6 +223,8 @@ nav i.material-icons {
     color: $laker-gold;
 }
 .brand-logo img {
+    position: relative;
+    top: 6.5em;
     height:5em;
     width:5em;
     margin-left:auto;

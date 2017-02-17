@@ -3,7 +3,7 @@
   background: url("/img/basketball-team.jpg") center;
   background-size: cover;
   height: 85vh;
-  font-family: "Oswald", cursive;
+  font-family: "Oswald", san-serif;
   font-style: italic;
   position: relative;
   margin-bottom: 64px;
@@ -53,7 +53,7 @@ a.button-collapse {
 h2 {
   position: relative;
   font-variant: small-caps;
-  font-family: "Oswald", cursive; }
+  font-family: "Oswald", san-serif; }
 
 .seperator-row {
   display: inline; }
@@ -161,6 +161,8 @@ footer a:hover {
   nav i.material-icons {
     color: #fdb928; }
   .brand-logo img {
+    position: relative;
+    top: 6.5em;
     height: 5em;
     width: 5em;
     margin-left: auto;
@@ -202,7 +204,7 @@ footer a:hover {
   #nav-mobile {
     padding: 0; }
   nav li {
-    font-family: "Oswald", cursive;
+    font-family: "Oswald", san-serif;
     font-size: 1.1em;
     border-radius: 50%;
     width: 4.4em;
