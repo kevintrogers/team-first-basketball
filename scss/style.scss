@@ -236,7 +236,7 @@ nav i.material-icons {
 }
 .brand-logo {
     position: relative;
-    margin-top: 2em;
+    
 }
 
 .mytab{
@@ -320,13 +320,14 @@ nav .brand-logo {
     position: relative;
     display: inline;
     left: 50%;
-    top: -15em;
+    top: 0;
     font-size: 1em;
  
     
 }
 .brand-logo img {
     display:inline-block;
+    top: -5.5em;
     height: 6.5em;
     width: 6.5em;
 
