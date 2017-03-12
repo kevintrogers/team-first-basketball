@@ -11,7 +11,7 @@ $bounce-time: 2s;
 
 
 #home {
-  background: url('img/basketball-team.jpg') center;
+  background: url('../img/basketball-team.jpg') center;
   background-size: cover;
   height: 85vh;
   font-family: $basefont;
@@ -304,7 +304,7 @@ nav li {
   width: 4.4em;
   height: 4.4em;
   margin: 0 .6em 0 .6em;
-  background: #fd6500 url('img/basketball.svg') center;
+  background: #fd6500 url('../img/basketball.svg') center;
   background-size: cover;
   position:relative;
   overflow: visible;
