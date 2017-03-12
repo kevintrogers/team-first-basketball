@@ -1,7 +1,6 @@
  $(function() {
 
-  var active, bounceButton = $('.nav-li');
-  
+  var bounceButton = $('.nav-li');
   
   $(".button-collapse").sideNav();
     
