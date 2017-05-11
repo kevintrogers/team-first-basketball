@@ -268,8 +268,6 @@ footer a:hover {
 /* iPads (portrait and landscape) ----------- */
 @media only screen and (min-device-width: 768px) {
   /* Styles */
-  #home {
-    top: 64px; }
   nav {
     position: fixed; }
   #nav-mobile {
