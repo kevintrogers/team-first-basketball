@@ -236,6 +236,8 @@ footer a:hover {
     padding: 0 10% 0 0; }
   .brand-logo {
     position: relative; }
+  .article {
+    line-height: 150%; }
   .mytab {
     margin-bottom: 1.1em; }
   .tab-button {
